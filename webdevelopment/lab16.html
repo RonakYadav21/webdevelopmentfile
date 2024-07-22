@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment 16</title>
+    <style>
+        .A{
+            
+            border-radius: 50%;
+            height: 200px;
+            width:200px ;
+            border: 4px solid #812e2b;
+            background:linear-gradient(to right bottom,rgb(172, 158, 158),rgb(147, 147, 226));
+            margin-left: 40%;    
+        }
+        .container{
+        margin-top: 45px;
+        margin-left: 30px;
+            padding: 20px;
+            align-items: center;
+        }
+    </style>
+</head>
+<body onload="time()">
+    <div class="A">
+   <div class="container">
+    <p>Current Time is</p>
+    <div id="time" > 
+    </div>
+        </div>
+        </div>
+        <p>clock</p>
+        <div id="demo"></div>
+        <script>
+            function gettime(){
+            var now =new Date();
+            document.getElementById("time").innerHTML=now.toLocaleTimeString();
+        }
+        function time(){
+            setInterval(gettime,1000);
+        }
+        
+    
+        
+    </script>
+    </body>
+</html>

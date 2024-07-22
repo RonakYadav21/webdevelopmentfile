@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        background-color: bisque;
+        width: 600px;
+        margin-left: 300px;
+    }
+</style>
+<body>
+    <div class="container">
+        <table cellpadding="2" cellspacing="20">
+            <tr>
+            <td><label for="Name">Name</label></td>
+            <td><input type="text" placeholder="UserName" id="Name"></td>
+        </tr>
+        <tr>
+            <td><label for="pwd">Password</label></td>
+            <td><input type="password" placeholder="PassWord" id="pwd"></td>
+        </tr>
+        <tr>
+            <td><button onclick="show()">show Information</button></td>
+            <td><button onclick="hide()">CLEAR</button></td>
+        </tr>
+        <tr>
+            <td>
+                <label>UserName Is :</label>
+            </td>
+            <td>
+                <div id="name"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div>
+                    <label>PassWord Is :</label>
+                </div>
+            </td>
+            <td>
+                <div id="password"></div>
+            </td>
+        </tr>
+    </table>
+    
+</div>
+    
+
+
+    <script>
+
+        function show() {
+            name = document.getElementById('Name').value;
+            pwd = document.getElementById('pwd').value;
+
+           /* document.getElementById('name').style.display = 'block';*/
+           /* document.getElementById('password').style.display = 'block';*/
+
+            document.getElementById('name').innerHTML = name;
+            document.getElementById('password').innerHTML = pwd;
+        }
+
+        function hide() {
+
+            document.getElementById('name').innerHTML= 'none';
+            document.getElementById('password').innerHTML= 'none';
+            document.getElementById('Name').value = "";
+            document.getElementById('pwd').value = "";
+        }
+    </script>
+</body>
+
+</html>

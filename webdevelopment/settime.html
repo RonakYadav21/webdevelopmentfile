@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>set time interval</p>
+    <button id="interval">time:</button>
+    <button onclick="stoptime()">stop </button>
+    
+    <script>
+       // alert("hellow");
+        //function sum(a,b){
+         //   return a+b;
+       // }
+    //    setTimeout(sum,1000,1,2)
+ let a=setTimeout(function(){
+   alert("hellow gyu");
+ },3000) 
+     function clear(){
+       clearTimeout(a);
+   }
+   let s=0;
+ let v=setInterval(myfunction,1000);
+function myfunction(){
+    s++;
+    document.getElementById("interval").innerHTML=s;
+}
+function stoptime(){
+    clearInterval(v);
+}
+
+     
+    </script>    
+</body>
+</html>

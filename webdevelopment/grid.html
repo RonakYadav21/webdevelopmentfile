@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+        .container {
+            background-color: bisque;
+            width: 90vw;
+            height: 90vh;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            column-gap: 10px;
+            row-gap: 10px;
+            /* overflow: scroll; */
+        }
+
+        .container>div {
+            background: linear-gradient(rgb(163, 113, 209), rgb(194, 156, 156));
+
+        }
+
+        .h {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            text-align: center;
+            font-size: xx-large;
+            padding-top: 10px;
+            color: rgb(228, 19, 19);
+        }
+
+        .f {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            text-align: center;
+            font-size: xx-large;
+            padding-top: 10px;
+            color: rgb(228, 19, 19);
+
+        }
+        .a{
+            overflow:hidden;
+        }
+       .h> img{
+            margin-left: 0 ;
+            margin-top: 0;
+            grid-area: auto;
+            
+            width:100px;
+            float:left;
+
+            /* height: 100%; */
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="h"> <img src="picture.jpg"></div>
+        <div class="d"><img src="picture.jpg"></div>
+        <div class="a">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus nam alias impedit ad eos nulla quas maxime, ducimus, tempore fuga magni itaque aliquid aperiam temporibus tenetur ratione nesciunt molestiae rem!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat nisi voluptatibus eligendi autem? Obcaecati officiis expedita inventore debitis ad quam, distinctio nam asperiores dolores, molestias tempora? Obcaecati magni aliquid qui?
+            Autem nostrum impedit magnam alias vero dicta, ad rerum quis consequuntur dolore similique eaque voluptatum delectus ipsam unde quidem! Quod laudantium neque dignissimos sunt voluptatem nam praesentium omnis, cum ad?
+            Harum consectetur pariatur assumenda officiis, impedit corporis et, fugiat cupiditate tempora eius perferendis ut nisi? Iure nulla a, ad totam obcaecati dignissimos aliquam! Eveniet nihil fugit quia totam, repellendus dolor?
+            Ducimus earum vero saepe ea tempora, tenetur id atque expedita maiores laudantium culpa, ipsa ad beatae molestias quas. Facilis voluptatibus neque fugit modi accusantium dolores iure doloremque totam dolor optio?
+            Nulla perspiciatis doloribus reprehenderit et aspernatur. Odio delectus hic assumenda sed quisquam consequatur a, harum laudantium, voluptatem fugit accusantium nam ipsum modi? Quidem ex quod perferendis repudiandae voluptates illo qui.
+            Eligendi nulla cupiditate, non perferendis veritatis ullam, necessitatibus labore, dolorem rem quia minus neque odit aperiam iusto vel accusamus nesciunt saepe reprehenderit eaque reiciendis recusandae sunt! Unde perspiciatis quasi minus?
+            Maiores sint nobis ullam unde quibusdam alias accusamus maxime perspiciatis hic, quod tenetur totam dicta exercitationem optio recusandae minima libero repellat modi ea quos porro dolore culpa fugiat numquam. Repellendus.
+            Blanditiis harum, fugiat aspernatur maiores fuga voluptas aut nemo doloremque iure officia eos enim assumenda molestias repudiandae tempora aliquid delectus id consectetur adipisci sed! Dolores tenetur minima laudantium magnam laborum?
+            quos.
+        </div>
+    
+        <div class="f"><img src="picture.jpg"></div>
+
+
+
+    </div>
+</body>
+
+</html>

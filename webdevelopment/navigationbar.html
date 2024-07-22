@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            ul{
+                margin:10px;
+                font-size: large;
+                list-style-type: none;
+                display: inline;
+            }
+            li{
+                background-color: cadetblue;
+                /* display: inline; */
+                float: left;
+                border-color: black;
+                /* dispaly:block; */
+            }
+            a{
+                /* background-color: yellow; */
+                padding:10px;
+                text-decoration:none;
+            }
+            a:hover{
+                color:rgba(243, 235, 235, 0.87);
+                background-color: rgb(148, 95, 17);
+            }
+            .A:active{
+                background-color: blueviolet;
+            }
+            #b{
+                background-color: aqua;
+            }
+            @media (max-width:100px) and(max-width:500px){
+                ul {
+                display: block;
+                }
+            
+            li{
+                float:none;
+            }
+        }
+        </style>
+    </head>
+<body>
+    <ul>
+        <li class="A"><a href="#home">Home</a></li>
+        <li class="A"><a href="#news">News</a></li>
+        <li class="A"><a href="#contact">Contact</a></li>
+        <li class="A" id="b"  style="float:right "><a href="#about">About</a></li>
+    </ul>
+
+<p>Note: We use href="#" for test links. In a real web site this would be URLs.</p>
+
+</body>
+</html>
+
+

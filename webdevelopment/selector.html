@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector</title>
+    <style>
+        .a p{
+            color:red;
+        }
+        .b>p{
+            color:green;
+        }
+div + p{
+    color:blue;
+}
+div~p{
+    color:yellow;
+}
+#ok{
+    display: none;
+    background-color: aqua;
+}
+.hel:hover #ok{
+    display:block;
+}
+h1::before{
+    content:url(smiley.gif);
+}
+a[target]{
+    background-color: red;
+}
+    </style>
+</head>
+<body>
+    <!-- combinator selector -->
+    <!-- 1)  desendant selector -->
+
+    <div class="a">
+        <p>this is</p>
+        <p>this is</p>
+        <p>this is</p>
+        <div>
+            <p>this is</p>
+        </div>
+    </div>
+    <!-- child selector -->
+   <div class="b">
+        <p>this is</p>
+        <p>this is</p>
+        <p>this is</p>
+        <div>
+            <p>this is</p>
+        </div>
+    <!-- adjacent silbing selector -->
+        <div >
+            <p>this is</p>
+            <p>this is</p>
+            <p>this is</p>
+            <div>
+                <p>this is</p>
+            </div>
+            <p>hellow</p>
+            <p>hellow hey</p>
+            <!-- general sibling selector -->
+
+            <!-- <div >
+                <p>this is</p>
+                <p>this is</p>
+                <p>this is</p>
+                <div>
+                    <p>this is</p>
+                </div>
+                <p>hellow</p>
+                <p>hellow hey</p>
+                <p>hellow hey</p>
+             -->
+
+
+
+                <!-- pseudo class selector -->
+            <div class="hel">hover over me
+                <p id="ok">hellow everyone</p>    
+            </div>
+    <!-- frist-child selector -->
+<!-- p:frist-child   ->all frist p of any element -->
+<!-- p i:frist-child    ->p ke sare frist i -->
+<!-- p:frist-child i   ->pehle p ke sare i -->
+
+
+<!-- pseudo-element   to provide css to specific part of the element  -->
+<!-- selector::pseudo-element -->
+<!-- ::frist-line -->
+<!-- ::frist-letter -->
+<!-- ::before -->
+<h1>this is heading</h1>
+<!-- ::maker     selects the maker of the list item -->
+<!--::selection    -> when we select some content-->
+
+
+
+
+<!--attribute selector-->
+<!--css[attribut] selector 
+    a[target="blank"]  can this also
+      -> css will apply on the content of that attributes -->
+<a href="" target="_blank">ok</a>
+
+</body>
+</html>

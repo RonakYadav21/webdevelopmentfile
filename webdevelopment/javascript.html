@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+</head>
+<body onload="fun()">
+    <p> iam here  with you</p>
+    <div id="d1">
+      hellow
+    </div>
+    <button id="btn">try it</button>
+    <p id="demo"> </p>
+    <div id="box1">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+       Asperiores voluptatum voluptate iusto suscipit, atque perspiciatis laboriosam possimus?
+        Inventore recusandae accusamus error quasi aliquid quod itaque, adipisci soluta sequi! Rem, blanditiis.
+    </div>
+    <button id="box2"> click on it</button>
+    <div id="box3">  </div>
+ <script type="text/javascript">
+
+   // document.write("<b>IIPS</b>");
+  // var x=document.getElementById("d1") ;
+    // x.innerHTML="<b>inter national institute of professional studies</b>" ;
+    // x.style.backgroundcolor="#adabab";//
+     
+     var myarray=new Array();
+     myarray[0]="ronak";
+     myarray[1]="yadav";
+    // document.write("myarray[0]="+myarray[0]+"<br>");
+    // alert("please read the instruction carefully");//
+    
+  let b=document.getElementById("btn");
+  b.addEventListener("click",displaydata);
+  
+  function displaydata(){
+    document.getElementById("demo").innerHTML="hellow";
+
+  }
+  let z=document.getElementById("box2");
+  z.addEventListener("click",copyt);
+ function copyt(){
+    document.getElementById("box3").innerHTML=document.getElementById("box1");
+ }
+  // document.execCommand("copy");////
+   //document.getElementById("box3").innerHTML=z.value;
+  
+    </script> 
+    <!--<script language="javascript">
+   function fun(){
+    document.write("<b>IIPS</b>");
+   }
+    </script>-->
+</body>
+</html>

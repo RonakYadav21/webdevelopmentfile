@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<HEAD>
+    <meta charset="viewport" content-width="device-width">
+    <title>
+        dropdown
+    </title>
+    <style>
+        .dropdown {
+            position: relative;
+            background-color: rgb(98, 31, 160);
+            color: blue;
+            display: inline-block;
+            padding: 10px;
+        }
+
+        .content {
+            display: none;
+            color: rgb(204, 88, 34);
+        }
+
+        .content a {
+            color: black;
+            padding: 10px;
+            text-decoration: none;
+            display: block;
+            color: crimson;
+        }
+
+        .content:hover a {
+            background-color: chocolate;
+            color:azure;
+        }
+
+        .dropdown:hover .content {
+            /* color: brown ; */
+            /* background-color: blueviolet; */
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: rgb(194, 175, 212);
+        }
+    </style>
+</HEAD>
+
+<body>
+    <div class="dropdown">
+        <botton class="dropbtn">hover over me</botton>
+        <div class="content">
+            <a href="#link">link1</a>
+            <a href="#link2">link2</a>
+            <a href="#lin3">link3</a>
+        </div>
+    </div>
+
+</body>
+
+</html>

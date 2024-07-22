@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            background-color: rgb(214, 141, 112);
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;   /*verical alignment*/
+            flex-wrap: wrap;  
+            /* flex-direction: row; */
+            /* object-fit: cover; */
+        }
+        img{
+            width:200px;
+            height:200px;
+            margin: 2px;
+            transition-duration:  2s ;
+            transition-timing-function: ease-in ;
+            transition-property: width,height,box-shadow;
+            /* padding: 5px; */
+        }
+      img:hover{
+        width: 300px;
+        height: 300px;
+       box-shadow:5px 5px 5px 6px brown;
+      }
+    </style>
+</head>
+<body>
+    <div id="container">
+<img src="picture.jpg">
+<img src="picture.jpg">
+<img src="picture.jpg">
+<img src="picture.jpg">
+    </div>
+    
+</body>
+</html>

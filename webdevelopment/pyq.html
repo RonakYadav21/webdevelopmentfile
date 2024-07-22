@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selectors</title>
+    <style>
+        #ani{
+            width:100px;
+            height:100px;
+            background-color: red;
+            border: 2px;
+            position:relative;
+            animation: change;
+            animation-duration: 10s;
+            animation-timing-function: ease-in-out;
+            animation-direction: alternate;
+            animation-iteration-count: 2;
+        }
+        @keyframes change{
+            from{
+                left:100px;
+                top:100px;
+                background-color: red;
+                width:100px;
+                height: 100px;
+            }
+            to{
+                left:300px;
+                top:500px;
+                background-color: green;
+                width:200px;
+                height: 200px;
+            }
+        }
+        a:hover{
+            color:green;
+            text-decoration: none;
+        }
+       #list{
+  background-color: rgb(163, 88, 88);
+}
+li:hover{
+    border: 1px;
+    background-color: yellow;
+    box-shadow:2px 3px blurradius red ;
+        }
+        #d1>.myclass+p
+{
+    background-color: red;
+}   
+   
+#d1+p{
+    color:yellow;
+}
+/* #d1~p{ */
+    /* background-color: blue; */
+/* } */
+#er>p{
+    color: brown;
+    background-color: chartreuse;
+}
+
+span~.myclass:hover{
+    font-size: xx-large;
+    background-color: rgb(182, 147, 154);
+}
+ </style>
+</head>
+<body>
+    <div id="d1">
+        <div class="myclass">this my class div
+
+            <p>hellow</p>
+        </div>
+        <p>hellow bye</p>
+    </div>
+    <p>my paragraph</p>
+    <p>my paragraph 2</p>
+    <div id="er">h
+        <p>asa</p>
+    </div>
+<span>how</span>
+<p class="myclass">how are you</p>
+<p class="myclass">how are you</p>
+
+
+<div id="ani"></div>
+<!-- list -->
+<ul id="list">
+    <li><a href="#iips">IIPS</a></li>
+    <li><a href="#iet"> IET</a></li>
+    <li><a href="ims">IMS<a></li>
+
+</ul>
+
+</body>
+</html>

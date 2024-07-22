@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>  
+          <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <title>javascript</title>
+    <style>
+        </style>
+        </head>
+        <body>
+            <p id="demo"> </p>
+            <p>object </p>
+             <p id="ok"> </p>
+             <p>counting</p>
+             <p id="A"></p>
+             <p id="data"></p>
+             <p id="cal"></p>
+
+            <script type="text/javascript">
+            
+                // var string="this";
+                // var name="ronak ";
+                // var channel="code with me";
+                // var temp='${name}is a good girl and she has a channel ${channel}';
+                // document.write(temp);
+
+              const cars=["bmw","volvo","ford","saab"]
+              let text="";
+              for(let i=0;i<cars.length;i++){
+                text+=cars[i]+"<br>";
+              }
+              document.getElementById("demo").innerHTML=text;
+        const item={
+            fname:"ronak",
+            surname:"yadav",
+            age:20,
+            course:"mtech",
+        };
+        let txt=" ";
+        for(let x in item){
+           // for(let x of item)//
+             txt+=item[x]+" ";
+            // for(let i=0;i<item.length;i++){
+                // txt+=item[i]+" ";
+        }
+        document.getElementById("ok").innerHTML=txt;
+
+        let t="";
+        let i=0;
+        while(i<10){
+            if(i==5){
+                break;
+            }
+            t+="<br>the no is "+i;
+            i++;
+        }
+document.getElementById("A").innerHTML=t;   
+
+     const data={
+            fname:"prince",
+            surname:"yadav",
+            course:"btech",
+            getdetails:function(){
+                return this.fname +" " + this.surname;
+            }
+        };
+        document.getElementById("data").innerHTML=data.getdetails();
+
+
+let x=myfunction(4,5);
+document.getElementById("cal").innerHTML=x;
+function myfunction(a,b){
+    return a*b;
+}
+              </Script>
+        </body>
+    </html>
+

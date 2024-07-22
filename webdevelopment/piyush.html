@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #image-container {
+            text-align: center;
+            width: 100%;
+        }
+
+        img {
+            width: 300px;
+            box-sizing: border-box;
+        }
+
+        button {
+            font-size: 10px;
+            padding: 0px 50px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="image-container">
+        <div id="d1">
+            <img id="image" src="picture.jpg" alt="Image">
+        </div>
+        <button id="prev-button">Left</button>
+        <button id="next-button" >Right</button>
+    </div>
+
+    <script>
+        const images = ["webimage.jpeg", "picture.jpg", "webimage.jpeg", "picture.jpg", "webimage.jpeg", "picture.jpg"];  /* creat array */
+        let currentIndex = 0;
+        const imageElement = document.getElementById("image");     
+        const prevButton = document.getElementById("prev-button");  
+        const nextButton = document.getElementById("next-button");   
+
+        function showImage(index) {
+            imageElement.src = images[index];
+        }
+
+        prevButton.addEventListener("click", function(){ 
+    
+            if (currentIndex > 0) {
+                currentIndex--;
+                showImage(currentIndex);
+            }
+        });
+
+        nextButton.addEventListener("click", function(){
+        
+            if (currentIndex < images.length - 1) {
+                currentIndex++;
+                showImage(currentIndex);
+            }
+        });
+
+        // showImage(currentIndex);
+    </script>
+</body>
+
+</html>

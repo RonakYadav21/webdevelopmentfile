@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="myfunction">
+    <div>
+        <p>current time is</p>
+        <div id="time"> </div>
+        <script>
+            // let v=setInterval(gettime,1000);
+            function gettime(){
+                var now=new date();
+                document.getElementById("time").innerHTML=now.toLocaleTimestring();
+            }
+            // clearInterval(v);
+            function myfunction(){
+                setInterval(gettime,1000);
+            }
+
+        </script>
+</body>
+</html>

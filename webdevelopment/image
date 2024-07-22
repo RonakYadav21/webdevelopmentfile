@@ -1,0 +1,4 @@
+<map name="image">
+<area shape="rect" coords="63,73,79,67" href="https://www.google.com" target="_blank">
+<area shape="circle" coords="86,80,80" alt="cup of tea" href="https://www.apple.com" target="new">
+</map>

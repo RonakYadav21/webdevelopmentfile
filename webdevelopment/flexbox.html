@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        .flex-box {
+            display: flex;
+            background-color: yellow;
+            flex-direction: row;
+            flex-wrap: wrap;
+            /* justify-content: flex-end; */
+            /* align-items: baseline; */
+        }
+        img{
+            box-sizing: border-box;
+            width: 350px;
+            height: 350px;
+        }
+
+        .flex-box>div {
+            background-color: antiquewhite;
+            margin: 10px;
+            /* padding: 20px; */
+            font-size: 30px;
+            width: 100px;
+        }
+
+        @media (max-width:600px) {
+            .flex-box {
+                flex-direction: row;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-box">
+        <div><img src="picture.jpg"></div>
+        <div><img src="webimage.jpeg"></div>
+        <div><img src="picture.jpg"></img></div>
+        <div><img src="webimage.jpeg"></div>
+        <div><img src="picture.jpg"></div>
+        <div><img src="webimage.jpeg"></div>
+    </div>
+</body>
+
+</html>

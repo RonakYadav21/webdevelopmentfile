@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="" en>
+
+<head>
+   <title>web page</title>
+   <style>
+      /* element selector */
+
+      p {
+         color: red;
+         background-color: green;
+
+      }
+
+      /* id selector */
+      #my {
+         color: rgb(255, 238, 0);
+         background-color: green;
+
+      }
+
+      /* class selector */
+      .ron {
+         color: rgb(131, 21, 158);
+         background-color: blueviolet;
+
+      }
+
+      /* grouping selector  */
+      footer,
+      span {
+         color: rgb(109, 109, 8);
+      }
+   </style>
+   <!-- internal css -->
+   <link rel="stylesheet" href="r.css">
+</head>
+
+<body>
+   <h2>this form is related to your personal information </h2>
+   <!-- inline css -->
+   <h2>
+      <p style="color:blue">fill it carefully</p>
+   </h2>
+   <h2>
+      <p id="my ">do not make any mistake </p>
+   </h2>
+   <h2>
+      <p class="ron"> complete the form</p>
+   </h2>
+   <h2>
+      <p> complete the form</p>
+   </h2>
+
+   <span>
+      <h3> read the instruction carefully</h3>
+   </span>
+   <form action="backend.php">
+
+      <lable for="name">name</label>
+
+         <input type="text" name="myname" id="name">
+
+         <br>
+         <br>
+         <div>
+            contact:<input type="number" name="mycontact">
+         </div>
+         <br>
+         <div>
+            email:<input type="email" name="myemail">
+         </div>
+         <br>
+         <lable for="course">course</lable>
+         <select name="my course" id="course">
+            <option value="mtech">mtech</option>
+            <option value="btech">btech</option>
+         </select>
+         <br>
+         <br>
+         <div>
+            gender: male<input type="radio" name="mygender"> femal <input type="radio" name="mygender">
+         </div>
+         <br>
+         <div>
+            are you eligible:<input type="checkbox" name="myeligibilty">
+         </div>
+         <br>
+         <div>
+            <input type="submit" value="submit now">
+
+
+            <input type="submit" value="reset now">
+         </div>
+
+   </form>
+   <br>
+   <footer> hey ! we meet soon </footer>
+</body>
+
+</html>

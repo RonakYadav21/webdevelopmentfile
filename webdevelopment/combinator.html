@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width:device-width">
+<head>
+    <style>
+        /* descendant selector */
+      div  p{
+        background-color: blueviolet;
+      } */
+      /* child selector */
+      div>p{
+        background-color: blueviolet;
+      }
+   div>section {
+        background-color: aqua;
+      }
+      /* adjacent sibling selector */
+     div+p {
+        background-color: chartreuse;
+      }
+      /* general sibling selector */
+      div~p{
+        color:chocolate;
+      }
+    </style>
+</head>
+<body>
+    <h1>combinator selector</h1>
+    <div>
+        <p><span>paragra</span></p>
+        <span><p>wererrf</p></span>
+        <span>paragra</span>
+        <p>paragraph</p>
+        <div>
+            <section>ok</section>
+        </div>
+
+        <p>paragraph</p>
+        <span><p>new</p></span>
+        <p>paragraph</p>
+        <p>paragraph</p>
+ </div>
+    <p>paragragh</p>
+    <p>paragragh</p>
+    <p>paragragh</p>
+    
+</body>
+</html>

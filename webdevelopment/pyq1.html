@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+        <script>
+            function show() {
+                var name = document.getElementById('Name').value;
+                var pwd = document.getElementById('pwd').value;
+                document.getElementById('name').innerHTML = name;
+                document.getElementById('password').innerHTML = pwd;
+            }
+            function hide() {
+                document.getElementById('name').style.display = 'none';
+                document.getElementById('password').style.display = 'none';
+                document.getElementById('Name').value = '';
+                document.getElementById('pwd').value = '';
+            }
+        </script>
+    </head>
+    <body>
+        <form>
+            <div style="border: 1px solid black; background-color: grey; width:60%;">
+                <div style="display: flex;">
+                    <div style="width:40%">
+                        Name<br>
+                        password
+            
+                        <button type="button" onclick="show()">show</button>
+                    </div>
+                    <div>
+                        <input type="text" id="Name" /><br><br>
+                        <input type="password" id="pwd" /><br><br>
+                        <button type="button" onclick="hide()">clear</button>
+                    </div>
+                </div>
+                <div style="border:1px solid black;background-color: red; width:40%">
+                       Username
+                       <span id="name"> </span><br>
+                       password
+                       <span id="password"> </span><br>
+                </div>
+            </div>
+        </form>
+    </body>
+    
+    </html>
+    
+
+
+</body>
+</html>
